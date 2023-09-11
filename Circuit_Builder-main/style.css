@@ -1,0 +1,138 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+#circuit-container {
+	width: 200px;
+	height: fit-content;
+}
+
+#circuit-toolbox {
+	width: 220px;
+	height: 700px;
+}
+
+#component-search-box {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	position: relative;
+	font-size: 20px;
+	line-height: 100%;
+	vertical-align: middle;
+}
+
+#component-search-text-box {
+	width: 190px;
+	height: 30px;
+	resize: none;
+	font-size: 12pt;
+	line-height: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#component-search-button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+}
+
+#component-search-button img {
+	width: 100%;
+	height: 100%;
+}
+
+#component-tool-list {
+	width: 100%;
+	height: 680px;
+	background-color: lightgray;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	text-align: center;
+	overflow: scroll;
+}
+
+.component-box {
+	display: block;
+	width: 100%;
+	height: 100px;
+	background-color: lightgray;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	text-align: center;
+}
+
+.component-box.absent {
+	display: none;
+}
+
+.component-tool {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+#circuit-map {
+	position: absolute;
+	left: 220px;
+	top: 0;
+	width: 1300px;
+	height: 710px;
+	border: 4px solid black;
+	overflow: hidden;
+}
+
+#circuit-overlay {
+	position: absolute;
+	width: 250px;
+	height: 30px;
+	top: 10px;
+	right: 10px;
+	z-index: 10;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	color: #888888;
+}
+
+#circuit-overlay .overlay_key {
+	width: 130px;
+	float: left;
+}
+
+#circuit-overlay .overlay_value {
+	width: 100px;
+	float: left;
+}
+
+.component {
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background-color: white;
+}
+
+#component-selection-area {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid rgb(127, 0, 0);
+	border: 1px solid rgba(255, 0, 0, .5);
+	background-color: rgba(0, 127, 255, .1);
+	-webkit-background-clip: padding-box; /* for Safari */
+	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	z-index: -1;
+}
+
+#component-selection-area.hidden {
+	display: none;
+}
